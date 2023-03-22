@@ -62,16 +62,6 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 ```
-
-## List of files/Descriptions:
-| S/N   |   Files      		|      Description     |
-|:-----:|--------------------:|--------------------|
-|  1.   |                      |              |
-|  2.   |		|			|
-|  3.   |		|		|
-|  4.   |		|			|
-|  5.   |		|		|
-
 ## Compilation & Output
 * These codes were compiled using: ```gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty```
 * Any output must be printed on ```stdout```
@@ -116,6 +106,3 @@ julien@ubuntu:~/monty$
 |                        Example #1                      |                    Example #2                   |                      Example #3                           |
 |:-------------------------------------------------------|:------------------------------------------------|:----------------------------------------------------------|
 | ~/monty$ `cat -e bytecodes/00.m` <br> push 1$ <br> push 2$ <br> push 3$ <br> pall$ <br> ~/monty$ `./monty bytecodes/00.m` <br> 3 <br> 2 <br> 1  | ~/monty$ `cat bytecodes/07.m`  <br> push 1 <br> push 2 <br> push 3 <br> pall <br> pop <br> pall <br> pop <br> pall <br> pop <br> pall <br>  ~/monty$ `./monty bytecodes/07.m`  <br> 3 <br> 2 <br> 1 <br> 2 <br> 1 <br> 1 | ~/monty$ `cat bytecodes/09.m` <br> push 1 <br> push 2 <br> push 3 <br> pall <br> swap <br> pall <br> ~/monty$ `./monty bytecodes/09.m` <br> 3 <br> 2 <br> 1 <br> 2 <br> 3 <br> 1 |
-
-## Authors/Collaborators
-[Okpara Onyedikachi](https://github.com/Dikachis/monty/) || [Duff Iniobong](https://github.com/Duffigoogle/monty/)
